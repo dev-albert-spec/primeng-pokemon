@@ -1,11 +1,11 @@
-#Primeng-pokemon
+# Primeng-pokemon
 Me estoy basando en primeng-quickstart para ir armando un proyecto donde consumo la pokemonApi.
 
-#quicktype
+## Quicktype
 Convert JSON into gorgeous, typesafe code in any language.
 [Quicktype](https://quicktype.io/)
 
-# PrimengQuickstart
+## PrimengQuickstart
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.0.3.
 
