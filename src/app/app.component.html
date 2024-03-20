@@ -1,0 +1,64 @@
+<div class="main-wrapper">
+    <div class="main-container">
+        <div class="hero-section">
+            <!--<div class="logo">
+                <img src="./assets/icon-primeng.svg" alt="logo" />
+                <img src="./assets/text-primeng.svg" alt="logo-text" />
+            </div>-->
+            <div class="hero-content">
+                <h1>Pokemon project with powerful PrimeNG</h1>
+                <span>We strongly advise you to explore the
+                    <a href="https://primeng.org/configuration/" target="_blank" class="doc-text">PrimeNG
+                        documentation</a>
+                    to enhance your skills.</span>
+            </div>
+        </div>
+
+        <div class="grid-section">
+            <div id="components" class="card forms">
+                <div class="form-wrapper">
+                    <span class="p-float-label form-input-wrapper">
+                        <input id="username" #pokemon_name type="text" pInputText class="form-input" />
+                        <label for="username">Pokemon Salvaje</label>
+                    </span>
+                    <button pButton pRipple class="form-button p-button-sm" 
+                    label="Atrapalo" (click)="buscalo(pokemon_name.value)"></button>
+                </div>
+
+                
+                <div *ngIf="capturado">
+                    <img src="{{imagen}}" alt="prime-template" class="box-image" />
+                </div>
+            </div>   
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-content">
+            <a href="https://github.com/primefaces/primeng/blob/master/LICENSE.md" target="_blank"
+                class="license">PrimeNG - MIT License</a>
+            <a class="footer-logo">
+                <img src="./assets/icon-primeng.svg" alt="logo" />
+            </a>
+            <a href="https://pokeapi.co/" target="_blank" class="card-footer-link">
+                <span><img src="./assets/pokeapi.png" alt="logo-pokeapi" width="25%" height="25%"/></span>
+            </a>
+
+            <a href="https://quicktype.io" target="_blank" class="card-footer-link">
+                <span><img src="./assets/quicktype.png" alt="logo-quicktype"/></span>
+            </a>
+
+            <div class="socials">
+                <a href="https://github.com/primefaces/primeng" target="_blank">
+                    <i class="pi pi-github"></i>
+                </a>
+                <a href="https://discord.gg/j2DQFtPD8z" target="_blank">
+                    <i class="pi pi-discord"></i>
+                </a>
+                <a href="https://twitter.com/prime_ng" target="_blank">
+                    <i class="pi pi-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
